@@ -18,6 +18,7 @@ class Auto {
     }
     
     func cambioDeVelocidad() -> (actual: Int, velocidadEnCadena: String) {
+        
          let velocidadActual: (actual: Int, velocidadEnCadena: String) = (self.velocidad.rawValue, self.velocidad == Velocidades.Apagado ? String(self.velocidad) :  "Velocidad " + String(self.velocidad).substringFromIndex(String(self.velocidad).startIndex.advancedBy(9)))
         // let velocidadActual: (actual: Int, velocidadEnCadena: String) = (self.velocidad.rawValue, String(self.velocidad))
         
